@@ -1,6 +1,10 @@
+import React from "react";
+import registerRootComponent from "expo/build/launch/registerRootComponent";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Page() {
+interface Props {}
+
+const App: React.FC<Props> = () => {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
@@ -9,7 +13,7 @@ export default function Page() {
       </View>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -32,3 +36,5 @@ const styles = StyleSheet.create({
     color: "#38434D",
   },
 });
+
+export default registerRootComponent(App);

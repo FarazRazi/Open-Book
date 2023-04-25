@@ -5,6 +5,7 @@
       "bundler": "metro"
     },
     "name": "YouBook",
-    "slug": "YouBook"
+    "slug": "YouBook",
+    "entryPoint": "./src/app/index"
   }
 }
